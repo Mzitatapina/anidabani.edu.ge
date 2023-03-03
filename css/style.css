@@ -1,0 +1,323 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
+
+
+
+
+body {
+    font-family: "BPG Arial", sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+a{
+   color: black;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(227,116,57);
+    font-size: 120%;
+ }
+
+  
+ span{
+    color: rgb(48,177,180)
+    ;
+ }
+
+
+ header{
+  margin: 0;
+ }
+
+ .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 4% 4% 1% 4%;
+    background-color: white;
+ }
+
+ .middle-part{
+  margin: 0;
+  padding: 5% 15% 5% 0%;
+  background-color: white;
+}
+
+.left-column {
+  padding-top: 15%;
+}
+
+ h1{
+   font-weight: bold;
+   font-size: 140%;
+   
+ }
+
+ .images {
+    display: inline-block;
+    margin-top: 11%;
+    
+ }
+
+ .playstore {
+   width: 40%;
+   height: 40%;
+ }
+
+ .appstore{
+   width: 40%;
+   height: 40%;
+      
+ }
+
+ .main-img{
+  width: 70%;
+  height: 70%;
+ }
+ 
+
+ .footer{
+   margin: 0;
+   padding: 3% 4% 1% 4%;
+   background-color: rgb(76,140,132);
+   display: grid;
+   grid-template-rows: 15% 85%;
+ }
+
+  
+   
+  .icons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon-container{
+    display: flex;
+    justify-content: end;
+  }
+ 
+  .socmedia{
+    width: 60%;
+    height: 60%;
+  }
+
+  .socmedia1{
+   width: 59.8%;
+   height: 59.8%;
+  
+  }
+
+  .additional-info {
+    margin-top: 10%;
+        
+  }
+ 
+  .additional-info li{
+    padding: 1.5%;
+  }
+
+  li:hover {
+    font-weight: bold;
+  }
+
+
+
+/*.menu-box{
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  padding: 1em;
+}*/
+@media screen and (max-width: 768px) {
+  
+.forMobile {
+  width: 5%;
+  height: 5%;
+  float: right;
+  cursor: pointer;
+}
+
+.menu-box {
+  width: 0;
+  height: 0;
+  display: block;
+  position: fixed;
+  z-index: 100;
+  background-color: rgb(76,140,132,0.8);
+  right: 0;
+  top: 0;
+  padding: 1em;
+  overflow: hidden;
+  
+  border-bottom-left-radius: 100%;
+  transition: width 0.5s, height 0.5s, border-radius 0.5s;
+}
+
+.menu-box a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 95%;
+  padding: 0.5%;
+  line-height: 200%;
+
+}
+
+.exitMobile {
+  width: 10%;
+  height: 10%;
+  float: right;
+  cursor: pointer;
+  margin-top: -20px;
+}
+
+.menu-box.open-menu {
+  width: 50%;
+  height: 100%;
+  border-bottom-left-radius: 0;
+}
+
+.footer{
+  height: 55%;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+.forMobile, .exitMobile{
+  display: none;
+}
+
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  /*grid-template-columns: auto;*/
+  
+}
+
+.logo {
+  font-size: 170%;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 70%;
+  width: 60%;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a{
+  color:black;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+li:hover {
+  font-weight: bold;
+}
+
+h1{
+   font-weight: bold;
+   font-size: 150%;
+ }
+
+.main-img{
+  width: 40%;
+  height: 40%;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  
+}
+
+.icons {
+  display: grid;
+  grid-template-rows: auto auto;
+  
+}
+
+.icon-container{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 4%;
+}
+
+.socmedia{
+  width: 60%;
+  height: 60%;
+  
+}
+.socmedia1{
+ width: 59.8%;
+ height: 59.8%;
+ 
+}
+
+.addistionalinfo{
+  margin: 0;
+  padding: 0;
+}
+
+.additional-info {
+  margin: 0;
+  display: flex;
+      
+}
+
+.additional-info li{
+    padding: 1.5%;
+}
+
+
+
+/*.rightpart{
+  border-left: 0.5px solid  grey;
+  float: right;
+  padding: 1% 4% 1% 4%;
+}
+
+.similarcontent{
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 20%;
+  height: 20%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}*/
+
+}
+
+/*<div class="rightpart">
+            <div class="similarcontent">
+                <a href="#"><img class="app" src="img/biliki.jfif" alt="biliki app"></a>
+                <a href="#"><img class="app" src="img/dade.png" alt="dade app"></a>
+            </div>
+
+        </div>*/
